@@ -3,9 +3,9 @@
 	{
 		$config = include 'sql_config.php';
 		
-		$query = (array)include 'sql_factory.php';
+		$queries = (array)include 'sql_factory.php';
 		
-		if($query['error'])
+		if( isset($queries['error']) )
 			echo  '{"error":true,"error_type":"POST","desc":"wrong-data"}';
 		else
 			echo json_encode( include 'sql_'.$config['type'].'.php' );
