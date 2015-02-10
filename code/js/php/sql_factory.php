@@ -1,0 +1,4 @@
+<?
+	$out=array();
+	
+	return $out;
