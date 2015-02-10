@@ -40,6 +40,17 @@
 				);
 			}
 		}
+		else
+		{
+			$results[$k] = array(
+				'error'=>true,
+				'result'=>false,
+				'type'=>'query'
+				'desc'=>'query-failed',
+				'__debug'=>mysql_errno().':'.mysql_error()
+			);
+		}
+		$results[$k]['query'] = $query;
 	}
 	
 	return $results;
