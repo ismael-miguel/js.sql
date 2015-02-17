@@ -44,7 +44,7 @@
 		{
 			$results[$k] = array(
 				'error'=>true,
-				'result'=>false,
+				'result'=>null,
 				'type'=>'query'
 				'desc'=>'query-failed',
 				'__debug'=>mysql_errno().':'.mysql_error()
