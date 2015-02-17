@@ -8,5 +8,8 @@
 			'post'=>3306,
 			'db'=>'test'
 		),
-		'allowed'=>'*'
+		'allowed'=>array(
+			'tables'=>'*',
+			'methods'=>array('select','insert','update','delete')
+		)
 	);
